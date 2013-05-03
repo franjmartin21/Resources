@@ -1,8 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<!-- Este archivo se utiliza para definir cadenas de caracteres
+que la aplicación de Android va a utilizar tanto en otros archivos
+xml de recursos, como en nuestras activities o cualquiera de las clases
+de la aplicación, luego veremos la forma de referenciarlas desde una clase
+.java o desde un xml -->
 
-    <string name="app_name">Resources</string>
-    <string name="menu_settings">Settings</string>
-    <string name="hello_world">Hello world!</string>
+<resources>
+<!-- Aquí hemos declarado una cadena de caracteres con el texto 
+que se puede ver 
+
+Lo primero que quiero que veais es que ocurre al guardar este fichero
+podeis crear vosotros una nueva cadena y pulsar guardar -->
+
+    <string name="app_name">Curso Philip Android and Sons</string>
+	<string name="holaphilip">Hola Philip</string>
+<!-- Como expliqué en la primera entrada del blog, todo recurso creado 
+genera una id unica en el fichero R.java que se encuentra en el directorio
+gen/ abrid el fichero para ver como hay una variable statica con el nombre 
+app_name -->
+
+<!-- Gracias a la referencia autogenerada en R.java, podremos referenciar siempre
+a ese recurso con la estructura "R.string.app_name" -->
+
+<!-- A continuación vamos a ver el archivo res/layout/activity_main.xml -->
+
+
+
+
+
+
+
+
 
 </resources>

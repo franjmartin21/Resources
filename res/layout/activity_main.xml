@@ -1,14 +1,42 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity" >
+<!-- 
+	En la carpeta res/layout, es donde se diseñan cada una de las pantallas
+	de la aplicación, aquí se pueden crear interfaces que luego serán cargadas
+	por una de las activities, básicamente se componen de layouts y componentes
+	como textViews, Buttons, RadioButtons, etc... En este caso solo queremos 
+	crear una vista muy básica, y cargarla en la activity
+ -->
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:text="@string/hello_world" />
 
-</RelativeLayout>
+<!-- En primer lugar añadimos uno de los varios layouts que tenemos 
+disponibles, LinearLayout que es quizás el más sencillo, simplemente
+alinea los componentes de forma horizontal o vertical según definamos
+en este caso vertical, los otros dos parametros "layout_width y 
+layout_weight definen el espacio que va a ocupar el layout, en este
+caso va a llenar todo el contenido del padre (que en este caso es toda la 
+pantalla)-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   			  android:orientation="vertical"
+   			  android:layout_width="fill_parent"
+   			  android:layout_height="fill_parent">
+	<!-- Vamos a añadir un par de componentes -->
+    
+    <!-- Añadimos un text field, como vemos la id se define con @+id/ y el id que queramos
+    el otro atributo de interes aqui es "android:text", aquí podemos ver cual es la forma de
+    referenciar desde un recurso a otro recurso, en este caso estamos referenciando el 
+    recurso que definimos en String.xml con el nombre holaphilip -->
+    <TextView android:id="@+id/text1" 
+        		android:layout_width="fill_parent"
+        		android:layout_height="wrap_content"
+        		android:text="@string/holaphilip" />
+    
+    <Button android:id="@+id/b1"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:text="@string/holaphilip" />
+    
+    <!-- A continuación vamos a ir a la Activity MainActivity.java, y vamos
+    a ver como cargar este layout -->
+    
+    
+    
+</LinearLayout>
